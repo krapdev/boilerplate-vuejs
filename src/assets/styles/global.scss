@@ -1,0 +1,66 @@
+.btn {
+  min-width: 34px;
+  margin: 0 5px;
+  background-color: $dark-grey;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  &:disabled, &:disabled:hover {
+    opacity: 0.2;
+    cursor: default;
+  }
+  &:hover {
+    opacity: 0.9
+  }
+  &.btn-valid {
+    background-color: $green;
+    font-size: 20px;
+  }
+}
+
+.accordion {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40%;
+  margin: 5px 0;
+  background-color: $green;
+  color: #fff;
+  cursor: pointer;
+  &.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+}
+
+/* input/output animations */
+/* https://fr.vuejs.org/v2/guide/transitions.html */
+.fade-enter-active {
+  transition: opacity .5s;
+}
+.fade-leave-active {
+  transition: opacity .1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+.slide-enter-active {
+  transition: all .3s ease;
+}
+.slide-enter, .slide-leave-to {
+  transform: translateY(-20px);
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
