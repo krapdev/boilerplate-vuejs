@@ -1,9 +1,8 @@
 {
-  "name": "@stime/boilerplate-vuejs",
-  "version": "1.9.0",
+  "name": "boilerplate-vuejs",
+  "version": "1.0.0",
   "description": "boilerplate for Vue.js application",
-  "author": "front@devlabs",
-  "license": "Mousquetaires STIME",
+  "author": "krapdev@gmail.com",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -11,10 +10,6 @@
     "lint": "eslint --ext .js,.vue src/",
     "coverage": "jest --config jest.conf.js --coverage",
     "build": "node build/build.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://git-stime.mousquetaires.com/poc/boilerplate-vuejs.git"
   },
   "dependencies": {
     "axios": "^0.18.0",
